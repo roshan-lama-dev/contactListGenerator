@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Project PortFolio</title>
+  </head>
+  <body>
+    <div class="wrapper background-black">
+      <div class="container">
+        <!-- my gives margin in y axis of 5 px -->
+        <div class="col text-center my-5">
+          <h1>Contact List</h1>
+        </div>
+        <!-- Input fields -->
+        <div class="row py-5 test">
+          <div class="col text-center">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter the name"
+              onkeyup="handleTextFromUser(this)"
+            />
+          </div>
+          <div class="col text-center">
+            <select
+              name=""
+              id=""
+              class="form-select"
+              onchange="handleGenderSelect(this)"
+            >
+              <option value="">Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+        </div>
+        <!-- Display Fields -->
+
+        <div class="row">
+          <div class="col">
+            <div class="text-center">
+              <span id="userCount">No</span> <span id="maleUsers"></span> Users
+              Found
+            </div>
+
+            <div
+              class="d-flex gap-4 justify-content-center align-item-center flex-wrap py-5"
+              id="displayField"
+            >
+              <button
+                class="btn btn-primary text-center"
+                type="button"
+                disabled
+              >
+                <span
+                  class="spinner-border spinner-border-sm"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+                Loading...
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

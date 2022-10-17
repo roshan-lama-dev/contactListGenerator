@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+}
+.container {
+}
+
+.test {
+}
+
+.test1 {
+  background: blue;
+}
+i {
+  /* margin-right: 5px; */
+  padding-right: 3px;
+}
