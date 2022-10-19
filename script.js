@@ -44,7 +44,9 @@ const displayUsers = (users) => {
   let str = "";
 
   users.map((item, index) => {
-    str += `  <div class="card" style="width: 18rem">
+    str += `
+    
+    <div class="card" style="width: 18rem">
     <img
       src="${item.picture.large}"
       class="card-img-top"
@@ -63,8 +65,8 @@ const displayUsers = (users) => {
     </div>
   </div>`;
   });
-
   displayElm.innerHTML = str;
+
   displayCount.innerText = users.length;
 };
 
